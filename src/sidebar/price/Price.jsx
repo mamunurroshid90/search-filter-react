@@ -1,7 +1,8 @@
 import React from "react";
 import { GiPriceTag } from "react-icons/gi";
+import Input from "../../components/input/Input";
 
-const Price = () => {
+const Price = ({ handleChange }) => {
   return (
     <>
       <div className="mt-10 ml-10">
@@ -11,27 +12,36 @@ const Price = () => {
           </span>
           Price
         </h2>
-        <div className="flex flex-col gap-3 ">
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">All</span>
+        <div>
+          <label>
+            <input onChange={handleChange} type="radio" value="" name="test2" />
+            <span>All</span>
           </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">$0-50</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">$50-100</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">$100-150</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">$Over-150</span>
-          </label>
+
+          <Input
+            handleChange={handleChange}
+            value={50}
+            title="$0 -50"
+            name="test2"
+          />
+          <Input
+            handleChange={handleChange}
+            value={100}
+            title="$50 -100"
+            name="test2"
+          />
+          <Input
+            handleChange={handleChange}
+            value={150}
+            title="$100 -150"
+            name="test2"
+          />
+          <Input
+            handleChange={handleChange}
+            value={200}
+            title="Over $150"
+            name="test2"
+          />
         </div>
       </div>
     </>

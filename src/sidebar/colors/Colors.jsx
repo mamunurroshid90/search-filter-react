@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineBgColors } from "react-icons/ai";
+import Input from "../../components/input/Input";
 
 const Colors = () => {
   return (
@@ -11,31 +12,8 @@ const Colors = () => {
           </span>
           Colors
         </h2>
-        <div className="flex flex-col gap-3 ">
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">All</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">Black</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">Blue</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">Green</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">Red</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-medium">White</span>
-          </label>
+        <div>
+          <Input />
         </div>
       </div>
     </>

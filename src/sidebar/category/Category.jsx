@@ -1,7 +1,8 @@
 import React from "react";
 import { TbCategoryPlus } from "react-icons/tb";
+import Input from "../../components/input/Input";
 
-const Category = () => {
+const Category = ({ handleChange }) => {
   return (
     <>
       <div className=" ml-10">
@@ -11,27 +12,36 @@ const Category = () => {
           </span>
           Category
         </h2>
-        <div className="flex flex-col gap-3">
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-semibold">All</span>
+        <div>
+          <label>
+            <input onChange={handleChange} type="radio" value="" name="test" />
+            <span>All</span>
           </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-semibold">Sneakers</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-semibold">Sandals</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-semibold">Flats</span>
-          </label>
-          <label className=" flex items-center gap-3 justify-start ">
-            <input className=" w-4 h-4" type="radio" name="test" />
-            <span className=" font-semibold">Heels</span>
-          </label>
+
+          <Input
+            handleChange={handleChange}
+            value="sneakers"
+            title="Sneakers"
+            name="test"
+          />
+          <Input
+            handleChange={handleChange}
+            value="sandals"
+            title="Sandals"
+            name="test"
+          />
+          <Input
+            handleChange={handleChange}
+            value="flats"
+            title="Flats"
+            name="test"
+          />
+          <Input
+            handleChange={handleChange}
+            value="heels"
+            title="Heels"
+            name="test"
+          />
         </div>
       </div>
     </>
