@@ -6,7 +6,7 @@ import { FaHeart } from "react-icons/fa";
 const Nav = () => {
   return (
     <>
-      <nav className=" container flex justify-between mx-auto max-w-[1280px] py-6 ">
+      <nav className="  flex justify-between pt-12 pb-5 ">
         <div className=" w-[250px]">
           <input
             type="text"
