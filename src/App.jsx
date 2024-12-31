@@ -12,7 +12,7 @@ function App() {
   // input filter
   const [query, setQuery] = useState("");
 
-  const handleInputChallenge = (e) => {
+  const handleInputChange = (e) => {
     setQuery(e.target.value);
   };
 
@@ -83,9 +83,9 @@ function App() {
     <>
       <Sidebar handleChange={handleChange} />
       <div className="container mx-auto w-[1300px] pl-5">
-        <Nav />
-        <Recomended />
-        <Products />
+        <Nav query={query} handleInputChange={handleInputChange} />
+        <Recomended handleClick={handleClick} />
+        <Products result={result} />
       </div>
     </>
   );
