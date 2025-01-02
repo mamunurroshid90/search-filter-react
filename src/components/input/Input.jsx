@@ -3,7 +3,7 @@ import React from "react";
 const Input = ({ handleChange, value, title, name, color }) => {
   return (
     <>
-      <div className=" ml-10">
+      <div className="">
         <div className="flex flex-col gap-3">
           <label className=" flex items-center gap-3 justify-start ">
             <input

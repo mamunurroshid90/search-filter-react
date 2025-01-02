@@ -6,7 +6,7 @@ import { FaHeart } from "react-icons/fa";
 const Nav = ({ handleInputChange, query }) => {
   return (
     <>
-      <nav className="  flex justify-between pt-12 pb-5 ">
+      <nav className="  flex justify-between ml-10 px-3 mt-5">
         <div className=" w-[250px]">
           <input
             onChange={handleInputChange}

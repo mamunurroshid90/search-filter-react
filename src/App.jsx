@@ -84,7 +84,7 @@ function App() {
   return (
     <>
       <Sidebar handleChange={handleChange} />
-      <div className="container mx-auto w-[1300px] pl-5">
+      <div className="container mx-auto w-[1240px] py-7 px-4">
         <Nav query={query} handleInputChange={handleInputChange} />
         <Recomended handleClick={handleClick} />
         <Products result={result} />

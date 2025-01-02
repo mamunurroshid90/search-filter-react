@@ -4,7 +4,7 @@ import Button from "../components/buttons/Button";
 const Recomended = ({ handleClick }) => {
   return (
     <>
-      <div className=" container mx-auto max-w-[1280px] py-6 ">
+      <div className=" container ml-10 px-3 my-8">
         <h2 className=" text-2xl font-bold font-sans">Recommended</h2>
         <div className=" flex gap-4 mt-4">
           <Button onClickHandler={handleClick} value="" title="All Products" />

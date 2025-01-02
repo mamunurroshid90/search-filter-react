@@ -5,7 +5,7 @@ import Input from "../../components/input/Input";
 const Price = ({ handleChange }) => {
   return (
     <>
-      <div className="mt-10 ml-10">
+      <div className="mt-10 ml-5">
         <h2 className=" text-xl flex items-center gap-2 font-semibold mb-5">
           <span>
             <GiPriceTag />
@@ -13,9 +13,15 @@ const Price = ({ handleChange }) => {
           Price
         </h2>
         <div>
-          <label>
-            <input onChange={handleChange} type="radio" value="" name="test2" />
-            <span>All</span>
+          <label className=" flex items-center gap-3 justify-start ">
+            <input
+              onChange={handleChange}
+              type="radio"
+              value=""
+              name="test2"
+              className=" w-4 h-4"
+            />
+            <span className=" font-medium">All</span>
           </label>
 
           <Input
